@@ -11,3 +11,4 @@ for time.Since(start) < duration {
 }
 ```
 - `<-time.After(duration)` waits for the duration to elapse and then sends the current time on the returned channel, perfect for **timeouts**
+- Use `atomic.AddInt64(...)` to increment integers belonging to structs that are shared between concurrent goroutines
